@@ -30,6 +30,21 @@ It is advisable to complete the configuration of these two dependency libraries 
 
 # Getting Started
 
+The above *.exe* files retain the parameters of HPCG 3.1.
+HPCGopt automatically selects the number of colors for the BMC method as "C=8" and adaptively divides the blocks according to the number of computing resources.
+
+In addition, HPCGopt provides the parameter "C=(2,4,8...) " to manually determine the number of colors used and the parameter "BX=*, BY=*, BZ=*" to manually determine the number of blocks in each direction.
+
+Example:
+```
+export OMP_NUM_THREADS=8
+mpirun -np 4 ./xhpcg C=4
+
+export OMP_NUM_THREADS=16
+mpirun -np 2 ./xhpcg BX=2 BY=4 BZ=2
+```
 
 
 # Note
+
+We will keep these files and data maintained. Please contact me if there are any new findings in the testing.
