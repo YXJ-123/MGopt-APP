@@ -1,21 +1,23 @@
 # MGopt-APP
 
-Contact:Xiaojian Yang (1724925160@qq.com)
+Contact: Xiaojian Yang (1724925160@qq.com)
 
-Multigrid algorithms are widely used for solving large-scale sparse linear systems, which are essential for many high-performanceworkloads. 
-The symmetric Gauss-Seidel (SYMGS) method is often responsible for the performance bottleneck of MG.
-MG-Opt uses a modified computational formulation to reduce computational operations and memory accesses in SYMGS.
+Multigrid algorithms accelerate the solution of large-scale sparse linear systems by generating a sequence of grids (from fine level to coarse level) by successive refinement.
+The Symmetric Gaussian-Seidel (SYMGS) method at each level is often the performance bottleneck of MG.
+MGopt uses a modified computational formulation to reduce computational operations and memory accesses in SYMGS.
 In addition, it proposes a new asynchronous parallelization scheme to reduce the synchronization overhead in SYMGS parallelization.
-These optimization techniques are combined with the HPCG benchmark and a linear solver for unstructured matrices to demonstrate their advantages.
+These optimization techniques have been combined with the HPCG benchmark and have significantly improved its performance.
 
-**This work is continuing to be optimized. In some cases, the pre-processing overhead is higher for some techniques, and we are working to refine this.
-So far, this project is only partially open source.
-If you have any questions about this project, please contact me.**
+
+**This work is continuing to be optimized.
+Here, this project shows only the *.exe* file (based on ARMv8 or x86) for your testing.
+If you have any questions about this project or are interested in the source code, please contact me.**
 
 
 # Paper information
-Authors [Title](File/https)
 
+**Xiaojian Yang, Shengguo Li, Fan Yuan, Dezun Dong, Chun Huang, Zheng Wang:** [Optimizing Multi-grid Computation and Parallelization on
+Multi-cores](https://doi.org/10.1145/3577193.3593726). **ICS 2023**
 
 
 # Software dependences
@@ -23,9 +25,6 @@ Authors [Title](File/https)
 [GNU Compiler (GCC) 11.2.0](http://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.gz)
 
 [MPICH 3.4.3](https://www.mpich.org/static/downloads/3.4.3/)
-
-[metis 5.1.0](http://glaros.dtc.umn.edu/gkhome/metis/metis/download)
-
 
 
 # Compile and Install
