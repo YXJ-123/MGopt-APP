@@ -26,12 +26,9 @@ Multi-cores](https://doi.org/10.1145/3577193.3593726). **ICS 2023**
 
 [MPICH 3.4.3](https://www.mpich.org/static/downloads/3.4.3/)
 
+It is advisable to complete the configuration of these two dependency libraries before *Getting Started*.
 
-# Compile and Install
-
-
-
-# Running
+# Getting Started
 
 
 
