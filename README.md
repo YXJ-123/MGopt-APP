@@ -47,4 +47,4 @@ mpirun -np 2 ./xhpcg BX=2 BY=4 BZ=2
 
 # Note
 
-We will keep these files and data maintained. Please contact me if there are any new findings in the testing.
+We will keep these files and datas maintained. Please contact me if there are any new findings in the testing.
