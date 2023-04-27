@@ -1,4 +1,4 @@
-# MG-Opt
+# MGopt-APP
 
 Contact:Xiaojian Yang (1724925160@qq.com)
 
