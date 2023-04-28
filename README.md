@@ -35,7 +35,7 @@ HPCGopt introduces the optimization technology of **Fusion+BMC**.
 The above *.exe* files retain the parameters of HPCG 3.1.
 HPCGopt automatically selects the number of colors for the BMC method as "C=8" and adaptively divides the blocks according to the number of computing resources.
 
-In addition, HPCGopt provides the parameter "C=(2,4,8...) " to manually determine the number of colors used and the parameter "BX=*, BY=*, BZ=*" to manually determine the number of blocks in each direction.
+In addition, HPCGopt provides the parameter "C=(2,4,8...) " to manually determine the number of colors used and the parameter "BX=\*, BY=\*, BZ=\*" to manually determine the number of blocks in each direction.
 
 Example:
 ```
