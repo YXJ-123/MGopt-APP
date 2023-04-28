@@ -39,6 +39,9 @@ In addition, HPCGopt provides the parameter "C=(2,4,8...) " to manually determin
 
 Example:
 ```
+export OMP_NUM_THREADS=4
+mpirun -np 8 ./xhpcg
+
 export OMP_NUM_THREADS=8
 mpirun -np 4 ./xhpcg C=4
 
