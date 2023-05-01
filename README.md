@@ -30,7 +30,7 @@ It is advisable to complete the configuration of these two dependency libraries 
 
 # Getting Started
 
-HPCGopt introduces the optimization technology of **Fusion+BMC**.
+HPCGopt introduces the optimization technology of **Fusion+BMC** from this paper.
 
 The above *.exe* files retain the parameters of HPCG 3.1.
 HPCGopt automatically selects the number of colors for the BMC method as "C=8" and adaptively divides the blocks according to the number of computing resources.
