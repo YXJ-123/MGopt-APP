@@ -2,7 +2,7 @@
 
 Contact: Xiaojian Yang (1724925160@qq.com)
 
-Multigrid algorithms accelerate the solution of large-scale sparse linear systems by generating a sequence of grids (from fine level to coarse level) by successive refinement.
+Multigrid algorithms accelerate the solution of large-scale sparse linear systems by generating a sequence of grids (from fine level to coarse level) through successive refinement.
 The Symmetric Gaussian-Seidel (SYMGS) method at each level is often the performance bottleneck of MG.
 MGopt uses a modified computational formulation to reduce computational operations and memory accesses in SYMGS.
 In addition, it proposes a new asynchronous parallelization scheme to reduce the synchronization overhead in SYMGS parallelization.
@@ -40,13 +40,13 @@ In addition, HPCGopt provides the parameter "C=(2,4,8...) " to manually determin
 Example:
 ```
 export OMP_NUM_THREADS=4
-mpirun -np 8 ./xhpcg
+mpirun -np 8 ./HPCGopt
 
 export OMP_NUM_THREADS=8
-mpirun -np 4 ./xhpcg C=4
+mpirun -np 4 ./HPCGopt C=4
 
 export OMP_NUM_THREADS=16
-mpirun -np 2 ./xhpcg BX=2 BY=4 BZ=2
+mpirun -np 2 ./HPCGopt BX=2 BY=4 BZ=2
 ```
 
 
